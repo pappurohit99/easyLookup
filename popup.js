@@ -8,9 +8,6 @@ let fetch = document.getElementById('retrieveData');
 fetch.onclick = function () {
     let text = document.getElementById('fname').value;
     let url = 'https://www.mathworks.com/support/search.html?q=' + text + '&fq=asset_type_name:documentation/function&page=1';
-    let currentURL = document.URL;
-    window.open(url);
-    console.log(document.URL);
 };
 // let text = document.getElementById('fname').innerText;
 // console.log(text);
