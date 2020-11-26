@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel = "stylesheet" type = "text/css" href = "popup.css" />
+    <title>Popup</title>
+    <link href="popup.css" rel="stylesheet">
+    
   </head>
   <body>
     
-    <div class="customStyle">
+    <div class="customStyle" role="main">
     <h1>Easy-Lookup</h1>
     <form>
     <input type="text" id="fname" name="fname" placeholder="Function Name" />
-    <input type="button" value="Get Toolbox" id="retrieveData" /> 
-    <textarea readonly id="showOutput" name="showOutput" placeholder="Results"></textarea>
+    <input type="button" value="LookUp" id="retrieveData" /> 
     </form>
     </div>
-    
+
     <script src="popup.js"></script>
   </body>
 </html>

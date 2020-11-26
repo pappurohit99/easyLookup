@@ -1,4 +1,8 @@
-<style type="text/css">
+
+body {
+	width: 400px;
+}
+
 .customStyle{
 	font: 95% Arial, Helvetica, sans-serif;
 	max-width: 400px;
@@ -16,8 +20,7 @@
 	margin: -16px -16px 16px -16px;
 }
 .customStyle input[type="text"],
-.customStyle textarea,
-.customStyle select 
+.customStyle textarea
 {
 	-webkit-transition: all 0.30s ease-in-out;
 	-moz-transition: all 0.30s ease-in-out;
@@ -59,4 +62,3 @@
 .customStyle input[type="button"]:hover{
 	background: #2EBC99;
 }
-</style>

@@ -1,14 +1,9 @@
 {
   "name": "EasyLookup",
   "version": "1.0",
-  "description": "find list of products a funtion is present",
-  "permissions": ["storage"],
-  "options_page": "options.html",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
-  "page_action": {
+  "description": "Search MATWORKS Documentations for the function",
+  "permissions": ["storage","activeTab"],
+  "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "images/EasyLookup16.png",
@@ -23,5 +18,13 @@
     "48": "images/EasyLookup48.png",
     "128": "images/EasyLookup128.png"
   },
+  "content_scripts": [
+     {
+         "matches": [
+             "<all_urls>"
+         ],
+         "js": ["content.js"]
+     }
+ ],
   "manifest_version": 2
 }
