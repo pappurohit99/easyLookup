@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <style>
-      button {
-        height: 30px;
-        width: 30px;
-        outline: none;
-      }
-    </style> -->
+    <link rel = "stylesheet" type = "text/css" href = "popup.css" />
   </head>
   <body>
-    <label for="fname">Function Name</label>
-
-    <input type="text" id="fname" name="fname">
-
-    <button id="retrieveData">Get Toolbox</button><br>
-
-    <label for="showOutput">Results</label><br>
-    <textarea id="showOutput" name="showOutput" rows="4" cols="50"></textarea>
+    
+    <div class="customStyle">
+    <h1>Easy-Lookup</h1>
+    <form>
+    <input type="text" id="fname" name="fname" placeholder="Function Name" />
+    <input type="button" value="Get Toolbox" id="retrieveData" /> 
+    <textarea readonly id="showOutput" name="showOutput" placeholder="Results"></textarea>
+    </form>
+    </div>
     
     <script src="popup.js"></script>
   </body>
